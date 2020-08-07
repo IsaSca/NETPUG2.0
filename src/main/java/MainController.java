@@ -1,24 +1,21 @@
+import com.brunomnsilva.smartgraph.graph.Graph;
 import com.brunomnsilva.smartgraph.graphview.SmartGraphPanel;
 import javafx.fxml.FXML;
 import javafx.scene.SubScene;
-
-import javax.annotation.Resources;
-import java.net.URL;
-
 
 public class MainController {
   
   @FXML SubScene graphScene;
   SmartGraphPanel<String, String> graphPanel;
+  Graph<String, String> graph;
+  
+  public void setGraph(Graph<String, String> graph) {
+    this.graph = graph;
+  }
   
   @FXML
   private void generateGraph() {
-    System.out.println(graphScene.getRoot());
-  }
-  
-  @FXML
-  protected void initialize(URL location, Resources resources) {
     graphPanel = (SmartGraphPanel<String, String>) graphScene.getRoot();
+    System.out.println(graph);
   }
-  
 }
