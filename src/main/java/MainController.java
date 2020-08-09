@@ -18,6 +18,6 @@ public class MainController {
   
   @FXML
   private void generateGraph() {
-    System.out.println(graph);
+    System.out.println(graph + "mmmm");
   }
 }
