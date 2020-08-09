@@ -9,13 +9,15 @@ public class MainController {
   SmartGraphPanel<String, String> graphPanel;
   Graph<String, String> graph;
   
-  public void setGraph(Graph<String, String> graph) {
+  public void setUpGraph(Graph<String, String> graph, SmartGraphPanel<String, String> graphPanel) {
+    this.graphPanel = graphPanel;
     this.graph = graph;
   }
   
+  
+  
   @FXML
   private void generateGraph() {
-    graphPanel = (SmartGraphPanel<String, String>) graphScene.getRoot();
     System.out.println(graph);
   }
 }

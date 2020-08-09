@@ -26,7 +26,7 @@ public class HelloFX extends Application {
     VBox myPane = myLoader.load();
     Scene myScene = new Scene(myPane);
     MainController myMainController = myLoader.getController();
-    myMainController.setGraph(g);
+    myMainController.setUpGraph(g, graphView);
     HBox SceneBox = (HBox) myPane.getChildren().get(1);
     SubScene subBox = (SubScene) SceneBox.getChildren().get(1);
     subBox.setRoot(graphView);
