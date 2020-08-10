@@ -35,14 +35,14 @@
                         <Button mnemonicParsing="false" text="Run" textAlignment="CENTER" />
                         <Line endX="100.0" startX="-100.0" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nmap" />
-                        <TextField prefHeight="26.0" prefWidth="181.0" promptText="Nmap command" />
-                        <Button mnemonicParsing="false" text="Run" textAlignment="CENTER" />
+                        <TextField fx:id="userCommand" prefHeight="26.0" prefWidth="181.0" promptText="Nmap command" />
+                        <Button mnemonicParsing="false" onAction="#getText" text="Run" textAlignment="CENTER" />
                         <Button mnemonicParsing="false" onAction="#generateGraph" text="Analyse" textAlignment="CENTER" textFill="RED" />
                      </children>
                   </VBox>
             </children>
           </AnchorPane>
-            <SubScene fx:id="graphScene" height="320.0" width="412.0">
+            <SubScene height="320.0" width="412.0">
               <root>
                 <Region />
               </root>
