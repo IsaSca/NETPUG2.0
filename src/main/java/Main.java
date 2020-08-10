@@ -12,12 +12,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class HelloFX extends Application {
+public class Main extends Application {
   Graph<String, String> g = new GraphEdgeList<>();
-//... see example below
-  
   SmartPlacementStrategy strategy = new SmartRandomPlacementStrategy();
   SmartGraphPanel<String, String> graphView = new SmartGraphPanel<>(g, strategy);
+  
+  /**
+   * This is a method that inits the scene.
+   * @param stage
+   * @throws IOException
+   */
   @Override
   public void start(Stage stage) throws IOException {
     
