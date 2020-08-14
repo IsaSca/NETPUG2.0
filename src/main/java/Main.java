@@ -40,8 +40,6 @@ public class Main extends Application {
     stage.show();
     graphView.setAutomaticLayout(true);
     graphView.init();
-    
-    
   }
   
   /**
