@@ -36,15 +36,24 @@ public class MainController {
 
   @FXML
   private void generateGraph() {
-    try {
-      xmlSaved.setTitle("Nmap Scan saved to: " + fileInput.getText());
-    } catch (NullPointerException e) {
+    if (!fileInput.getText().equals("")) {
+      fileName = fileInput.getText() + ".xml";
+    } else {
       fileName = "NmapScan.xml";
-      xmlSaved.setTitle("Nmap Scan saved to: ");
     }
+
+    showSaved();
+    testGraph();
+  }
+
+  public void showSaved() {
+    xmlSaved.setTitle("Nmap Scan saved to: " + fileName);
     xmlSaved.setHeaderText("Scan saved");
     xmlSaved.setContentText("");
     xmlSaved.show();
+  }
+
+  public void testGraph() {
     graph.insertVertex("1");
     for(int i = 2; i < 10; i++) {
       graph.insertVertex(String.valueOf(i));
@@ -53,6 +62,5 @@ public class MainController {
       graph.insertEdge("1", v.element().toString(), v.element().toString());
     }
     graphPanel.update();
-    System.out.println(graph);
   }
 }
