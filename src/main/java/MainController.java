@@ -8,7 +8,9 @@ public class MainController {
   @FXML SmartGraphPanel<String, String> graphPanel;
   Graph<String, String> graph;
   @FXML TextField userCommand;
-  
+  @FXML TextField fileName;
+
+
   public void setUpGraph(Graph<String, String> graph, SmartGraphPanel<String, String> graphPanel) {
     this.graphPanel = graphPanel;
     this.graph = graph;
@@ -22,7 +24,12 @@ public class MainController {
       System.out.println("no");
     }
   }
-  
+
+  @FXML
+  private void runCommand() {
+
+  }
+
   @FXML
   private void generateGraph() {
     graph.insertVertex("1");
