@@ -36,6 +36,7 @@ public class MainController {
 
   @FXML
   private void generateGraph() {
+    //TODO: Check if a file exists
     if (!fileInput.getText().equals("")) {
       fileName = fileInput.getText() + ".xml";
     } else {
