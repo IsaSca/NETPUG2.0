@@ -24,7 +24,7 @@
         </Menu>
       </menus>
     </MenuBar>
-      <HBox>
+      <HBox translateX="1.0" translateY="1.0" translateZ="1.0">
          <children>
           <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="164.0" prefWidth="250.0">
             <children>
