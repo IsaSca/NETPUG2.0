@@ -4,6 +4,7 @@ import com.brunomnsilva.smartgraph.graphview.SmartGraphPanel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -22,6 +23,10 @@ public class MainController {
   Alert xmlSaved = new Alert(Alert.AlertType.INFORMATION);
   String fileName;
   NodeList hostList;
+  @FXML Text hostText;
+  @FXML Text ipText;
+  @FXML Text ports;
+  @FXML Text vulns;
 
   public void setUpGraph(Graph<String, String> graph, SmartGraphPanel<String, String> graphPanel) {
     this.graphPanel = graphPanel;
@@ -77,6 +82,7 @@ public class MainController {
     runCommand();
     showSaved();
     testGraph();
+    buildGraph();
   }
 
   public void buildGraph() {
@@ -85,7 +91,7 @@ public class MainController {
         Node nNode = hostList.item(temp);
         System.out.println("\nCurrent Element :" + nNode.getNodeName());
 
-        if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+        /*if (nNode.getNodeType() == Node.ELEMENT_NODE) {
           Element eElement = (Element) nNode;
           System.out.println("Student roll no : "
             + eElement.getAttribute("addr"));
@@ -109,7 +115,7 @@ public class MainController {
             .getElementsByTagName("marks")
             .item(0)
             .getTextContent());
-        }
+        }*/
       }
     } catch (Exception e) {
       e.printStackTrace();
