@@ -63,7 +63,7 @@ public class MainController {
         }
         parser = new NmapParse(fileName);
         hostList = parser.getDetails();
-
+        System.out.println(hostList.item(0).toString());
       } catch (IOException | InterruptedException | SAXException | ParserConfigurationException e) {
         e.printStackTrace();
       }
@@ -82,40 +82,26 @@ public class MainController {
     runCommand();
     showSaved();
     testGraph();
-    buildGraph();
+    //buildGraph();
   }
 
   public void buildGraph() {
     try {
       for (int temp = 0; temp < hostList.getLength(); temp++) {
         Node nNode = hostList.item(temp);
-        System.out.println("\nCurrent Element :" + nNode.getNodeName());
+        System.out.println("\nCurrent Element : " + nNode.getNodeName());
 
-        /*if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+        if (nNode.getNodeType() == Node.ELEMENT_NODE) {
           Element eElement = (Element) nNode;
           System.out.println("Student roll no : "
             + eElement.getAttribute("addr"));
           System.out.println("First Name : "
             + eElement
-            .getElementsByTagName("firstname")
+            .getElementsByTagName("address")
             .item(0)
             .getTextContent());
-          System.out.println("Last Name : "
-            + eElement
-            .getElementsByTagName("lastname")
-            .item(0)
-            .getTextContent());
-          System.out.println("Nick Name : "
-            + eElement
-            .getElementsByTagName("nickname")
-            .item(0)
-            .getTextContent());
-          System.out.println("Marks : "
-            + eElement
-            .getElementsByTagName("marks")
-            .item(0)
-            .getTextContent());
-        }*/
+
+        }
       }
     } catch (Exception e) {
       e.printStackTrace();
