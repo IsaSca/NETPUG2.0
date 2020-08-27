@@ -11,7 +11,7 @@ Some features include:
 * Intelligent Tool Selection
 * Improved CSS modification to easily edit the interface
 * Implement pre-set CSS sheets which the user can select
-* ALlow for the tool to be used to train new Security Specialists
+* Allow for the tool to be used to train new Security Specialists
 
 Its current interface is as follows:
 
