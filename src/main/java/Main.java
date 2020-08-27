@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.SubScene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -25,7 +26,8 @@ public class Main extends Application {
   @Override
   public void start(Stage stage) throws IOException {
     
-    stage.setTitle("Hello");
+    stage.setTitle("NETPUG");
+    stage.getIcons().add(new Image("file:src/main/resources/netpugnew.png"));
     FXMLLoader myLoader = new FXMLLoader(getClass().getResource("main.fxml"));
     VBox myPane = myLoader.load();
     Scene myScene = new Scene(myPane);
