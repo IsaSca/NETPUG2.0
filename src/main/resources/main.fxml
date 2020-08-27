@@ -46,10 +46,10 @@
                   <Label layoutX="14.0" layoutY="198.0" text="IPv4 Address: " />
                   <Label layoutX="14.0" layoutY="232.0" text="Vulnerabilites:" />
                   <Label layoutX="14.0" layoutY="215.0" text="Open Ports:" />
-                  <Text fx:id="hostText" layoutX="51.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                  <Text fx:id="ipText" layoutX="94.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                  <Text fx:id="ports" layoutX="83.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                  <Text fx:id="vulns" layoutX="94.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="hostText" layoutX="66.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="ipText" layoutX="105.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="ports" layoutX="94.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="vulns" layoutX="105.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                     </children>
                 </AnchorPane>
                 <SubScene height="320.0" width="412.0">
