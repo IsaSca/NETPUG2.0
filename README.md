@@ -9,4 +9,4 @@ NETPUG aims to solve the issue of arduous manual reconnaisance phases. In its cu
 
 Its current interface is as follows:
 
-![alt text](https://github.com/IsaSca/NETPUG2.0/blob/master/src/main/resources/interface.png?raw=true)
+![alt text](https://github.com/IsaSca/NETPUG2.0/blob/master/src/main/resources/interface.PNG?raw=true)
